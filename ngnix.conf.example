@@ -1,0 +1,19 @@
+upstream odoo_server {
+    server 127.0.0.1:8069;
+}
+
+upstream odoo_chat {
+    server 127.0.0.1:8072;
+}
+
+server {
+    server_name <your_server>;
+
+    location / {
+        proxy_pass http://odoo_server;
+    }
+
+    location /websocket {
+        proxy_pass http://odoo_chat;
+    }
+}
