@@ -7,4 +7,7 @@ db_name = <>
 db_user = <>
 db_password = <>
 addons_path = <>,<>
+workers = <>
+proxy_mode = <>
+limit-request = <>
 default_productivity_apps = True
