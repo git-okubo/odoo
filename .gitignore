@@ -47,6 +47,7 @@ package.json
 /man/
 /share/
 /src/
+venv/
 
 # custom addons
 custom_addons_odoo/
