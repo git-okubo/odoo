@@ -47,3 +47,7 @@ package.json
 /man/
 /share/
 /src/
+
+# custom addons
+custom_addons_odoo/
+odoo.conf
