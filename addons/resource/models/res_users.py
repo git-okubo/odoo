@@ -12,6 +12,7 @@ class ResUsers(models.Model):
     resource_calendar_id = fields.Many2one(
         'resource.calendar', 'Default Working Hours',
         related='resource_ids.calendar_id', readonly=False)
+    karma = fields.Char(string='Karma', required=False)
 
     def write(self, vals):
         rslt = super().write(vals)
